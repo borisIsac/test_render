@@ -10,7 +10,7 @@ def index(request):
     context = {
         "title": "Главная страница",
         'user1': "Boris Isac",
-        'user2': "Oxana Bruieva",
+        'user2': "Oksana Bruieva",
     }
     #return HttpResponse(f"{context['user1']}-{context['user2']}")
     return render(request, "index.html", context=context)
