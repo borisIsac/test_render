@@ -12,5 +12,5 @@ def index(request):
         'user1': "Boris Isac",
         'user2': "Oxana Bruieva",
     }
-    return HttpResponse(f"{context['user1']}-{context['user2']}")
-    #return render(request, "templates\index\index.html", context=context)
+    #return HttpResponse(f"{context['user1']}-{context['user2']}")
+    return render(request, "index.html", context=context)
